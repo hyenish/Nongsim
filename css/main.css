@@ -1,0 +1,536 @@
+@charset "UTF-8";
+
+/********** 타이틀 **********/
+#title {}
+#title img {
+    width: 100%;
+    position: relative;
+}
+#title::after{
+    display: block;
+    content: "";
+    background-image: url(../img/bg-wave.png);
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    bottom: -367px;
+    right: 0;
+    background-repeat: repeat;
+}
+
+
+/********** 오직 농심몰 **********/
+#only {
+    width: 100%;
+    margin: 100px 0;
+    position: relative;
+}
+
+/* 타이틀 */
+.title {}
+.title .text{}
+.title h2 {
+    font-size: 50px;
+    margin: 15px 0;
+}
+.title p {
+    font-size: 20px;
+}
+
+/* 오른쪽 서브박스 */
+.sub_box {
+    position: absolute;
+    right: 0;
+    top: 68px;
+}
+.sub_box ul {
+    display: flex;
+    justify-content: end;
+}
+.sub_box ul li {
+    border: 1px solid #999;
+    margin: 0 10px;
+    padding: 10px 33px;
+    border-radius: 22px;
+    background-color: #fff;
+}
+.sub_box ul li.on{
+    border: 1px solid transparent;
+    margin: 0 10px;
+    padding: 10px 33px;
+    border-radius: 22px;
+    background-color: #c7002e;
+}
+.sub_box ul li:hover{
+    border: 1px solid transparent;
+    margin: 0 10px;
+    padding: 10px 33px;
+    border-radius: 22px;
+    background-color: #c7002e;
+}
+.sub_box ul li a {
+    color: #999;
+}
+.sub_box ul li.on a{
+    color: #fff;
+}
+.sub_box ul li:hover a{
+    color: #fff
+}
+
+/* 콘텐츠 */
+.contents {
+    display: flex;
+    margin-top: 50px;
+}
+.contents .item{
+    width: 25%;
+    padding-right: 20px;
+}
+.contents .item .image{
+    position: relative;
+}
+.contents .item:nth-of-type(4){
+    padding-right: 0;
+}
+.contents .item p.image{
+    height: 335px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fafafa;
+    background-size: 300px;
+    border-radius: 20px;
+    font-size: 0;
+    position: relative;
+}
+.contents .item p.image:hover{
+    border: 3px solid #c7002e;
+    background-origin: border-box;
+}
+#only .contents .item:nth-of-type(1) p.image{
+    background-image: url(../img/only/only1_1.png);
+}
+#only .contents .item:nth-of-type(2) p.image{
+    background-image: url(../img/only/only1_2.png);
+}
+#only .contents .item:nth-of-type(3) p.image{
+    background-image: url(../img/only/only1_3.png);
+}
+#only .contents .item:nth-of-type(4) p.image{
+    background-image: url(../img/only/only1_4.png);
+}
+
+.contents .item .image_wrap{
+    position: relative;
+}
+.contents .item .side{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+.contents .item .side p.wish{
+    background-image: url(../img/wish.png);
+    width: 44px;
+    height: 44px;
+    margin-bottom: 10px;
+}
+.contents .item .side p.cart{
+    background-image: url(../img/cart_circle.png);
+    width: 44px;
+    height: 44px;
+}
+.contents .text_prev{
+    margin: 10px 0;
+}
+.contents .text{
+    height: 160px;
+}
+.contents .text p.title{
+    font-size: 18px;
+    /*! font-weight: 700; */
+    height: 50px;
+}
+.contents .text p.price{
+    height: 50px;
+    /*! font-weight: bold; */
+}
+.contents .text p.price span{
+    margin-right: 4px;
+}
+.contents .text p.price span.now_price{
+    font-size: 20px;
+}
+.contents .text p.price span.prev_price{
+    font-size: 14px;
+    color: #aaa;
+    text-decoration-line: line-through;
+}
+.contents .text p.price span.percent{
+    font-size: 20px;
+    color: #c7002e;
+}
+
+
+/********** AI 추천 **********/
+#ai{
+    width: 100%;
+    margin: 100px 0;
+    position: relative;
+}
+#ai .contents{
+    flex-wrap: wrap;
+}
+.contents .item:nth-of-type(8){
+    padding-right: 0;
+}
+#ai .contents .item:nth-of-type(1) p.image{
+    background-image: url(../img/ai/ai1.png);
+}
+#ai .contents .item:nth-of-type(2) p.image{
+    background-image: url(../img/ai/ai2.png);
+}
+#ai .contents .item:nth-of-type(3) p.image{
+    background-image: url(../img/ai/ai3.png);
+}
+#ai .contents .item:nth-of-type(4) p.image{
+    background-image: url(../img/ai/ai4.png);
+}
+#ai .contents .item:nth-of-type(5) p.image{
+    background-image: url(../img/ai/ai5.png);
+}
+#ai .contents .item:nth-of-type(6) p.image{
+    background-image: url(../img/ai/ai6.png);
+}
+#ai .contents .item:nth-of-type(7) p.image{
+    background-image: url(../img/ai/ai7.png);
+}
+#ai .contents .item:nth-of-type(8) p.image{
+    background-image: url(../img/ai/ai8.png);
+}
+#ai .contents .text p.title{
+    margin-top: 30px;
+}
+
+
+/********** 따끈따끈 신상 new **********/
+#new { 
+    margin-bottom: 200px;
+}
+#new .contents { 
+    background-color: #fff5f7;
+}
+#new .contents .inner{
+    display: flex;
+    margin-top: 50px;
+}
+#new .contents .item p.image{
+    background-color: #fff;
+}
+#new .contents .item:nth-of-type(1) p.image{
+    background-image: url(../img/new/new1.png);
+}
+#new .contents .item:nth-of-type(2) p.image{
+    background-image: url(../img/new/new2.png);
+}
+#new .contents .item:nth-of-type(3) p.image{
+    background-image: url(../img/new/new3.png);
+}
+#new .contents .item:nth-of-type(4) p.image{
+    background-image: url(../img/new/new4.png);
+}
+
+
+/********** 지금이다 핫딜 **********/
+#hotdeal {
+    background-color: #c7002e;
+    background-image: url(../img/main-hotdeal__bg.png);
+    height: 710px;
+    margin-bottom: 400px;
+}
+#hotdeal .title{
+    padding-top: 170px;
+    margin: 50px 0;
+}
+#hotdeal .title .text{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+#hotdeal .contents{
+    background-color: #fff;
+    border-radius: 100px;
+    margin: 0 70px;
+    padding: 50px;
+    box-shadow: 3px 3px 20px 10px rgba(0,0,0,0.1);
+}
+#hotdeal .contents .image{
+    width: 480px;height: 480px;
+    background-color: #fafafa;
+    border-radius: 40px
+        ;position: relative;}
+#hotdeal .contents .image img{
+    width: 450px;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hotdeal .contents .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+#hotdeal .contents .text p.time_txt{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+#hotdeal .contents .text p.time{
+    background-color: #000;
+    color: #fff;
+    font-size: 50px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-top: 30px;
+}
+#hotdeal .contents .text p.title{
+    margin: 50px 0;
+    padding: 0;
+    font-size: 30px;
+}
+#hotdeal .now_price{
+    font-size: 30px;
+}
+#hotdeal .prev_price{
+    font-size: 20px;
+}
+#hotdeal .percent{
+    font-size: 30px;
+}
+
+
+
+/********** 세 가지 배너 **********/
+#banner {
+    position: relative;
+    margin-bottom: 200px;
+}
+#banner img{
+    border-radius: 20px;
+}
+#banner a.b1 > img{
+    margin-bottom: 40px;
+    width: 100%;
+}
+#banner a.b2 > img{
+    width: 869px;
+    margin-right: 29px;
+}
+#banner a.b3 > img{
+    width: 504px;
+}
+
+
+/********** 가장 잘팔려요 베스트 **********/
+#best{
+}
+#best .contents{
+    display: flex;
+    flex-wrap: wrap;
+}
+#best .contents .item:nth-of-type(1) p.image{
+    background-image: url(../img/best/best2_1.png);
+}
+#best .contents .item:nth-of-type(2) p.image{
+    background-image: url(../img/best/best2_2.png);
+}
+#best .contents .item:nth-of-type(3) p.image{
+    background-image: url(../img/best/best2_3.png);
+}
+#best .contents .item:nth-of-type(4) p.image{
+    background-image: url(../img/best/best2_4.png);
+}
+#best .contents .item:nth-of-type(5) p.image{
+    background-image: url(../img/best/best2_5.png);
+}
+#best .contents .item:nth-of-type(6) p.image{
+    background-image: url(../img/best/best2_6.png);
+}
+#best .contents .item:nth-of-type(7) p.image{
+    background-image: url(../img/best/best2_7.png);
+}
+#best .contents .item:nth-of-type(8) p.image{
+    background-image: url(../img/best/best2_8.png);
+}
+#best .contents .text p.title{
+    margin-top: 20px;
+}
+
+
+/********** 리미티드 농심몰 상품 배너 **********/
+#limited_banner{
+    background-color: #ffdb7a;
+    margin: 200px 0;
+}
+
+
+/********** 브랜드 리스트 **********/
+#brand {
+    margin: 200px 0;
+}
+#brand .contents {
+
+}
+#brand ul.brand_list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#brand li {
+
+}
+#brand li a {
+    display: block;
+    width: 122px;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-size: 0px;
+}
+#brand li:nth-of-type(1) a {
+    background-image: url(../img/brand/brand1.png);
+}
+#brand li:nth-of-type(2) a {
+    background-image: url(../img/brand/brand2.png);
+}
+#brand li:nth-of-type(3) a {
+    background-image: url(../img/brand/brand3.png);
+}
+#brand li:nth-of-type(4) a {
+    background-image: url(../img/brand/brand4.png);
+}
+#brand li:nth-of-type(5) a {
+    background-image: url(../img/brand/brand5.png);
+}
+#brand li:nth-of-type(6) a {
+    background-image: url(../img/brand/brand6.png);
+}
+#brand li:nth-of-type(7) a {
+    background-image: url(../img/brand/brand7.png);
+}
+#brand li:nth-of-type(8) a {
+    background-image: url(../img/brand/brand8.png);
+}
+#brand li:nth-of-type(9) a {
+    background-image: url(../img/brand/brand9.png);
+}
+#brand li:nth-of-type(10) a {
+    background-image: url(../img/brand/brand10.png);
+}
+#brand li span {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+
+/********** 인스타그램 **********/
+#insta {
+
+}
+#insta .contents {
+}
+#insta ul.insta_list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+}
+#insta ul.insta_list li {
+    width: calc(100% / 8);
+    padding-right: 10px;
+}
+#insta ul.insta_list li:nth-of-type(8){
+    padding-right: 0px;
+}
+#insta ul.insta_list li:nth-of-type(16){
+    padding-right: 0px;
+}
+#insta ul.insta_list li a{
+    display: inline-block;
+    width: 100%;
+    padding-top: 100%;
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#insta ul.insta_list li a::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.2s;
+}
+#insta ul.insta_list li a:hover::before{
+        opacity: 1;
+}
+#insta ul.insta_list li a:hover::after{
+
+}
+#insta ul.insta_list li:nth-of-type(1) a{
+    background-image: url(../img/insta/insta1.jpg);
+}
+#insta ul.insta_list li:nth-of-type(2) a{
+    background-image: url(../img/insta/insta2.jpg);
+}
+#insta ul.insta_list li:nth-of-type(3) a{
+    background-image: url(../img/insta/insta3.jpg);
+}
+#insta ul.insta_list li:nth-of-type(4) a{
+    background-image: url(../img/insta/insta4.jpg);
+}
+#insta ul.insta_list li:nth-of-type(5) a{
+    background-image: url(../img/insta/insta5.jpg);
+}
+#insta ul.insta_list li:nth-of-type(6) a{
+    background-image: url(../img/insta/insta6.jpg);
+}
+#insta ul.insta_list li:nth-of-type(7) a{
+    background-image: url(../img/insta/insta7.jpg);
+}
+#insta ul.insta_list li:nth-of-type(8) a{
+    background-image: url(../img/insta/insta8.jpg);
+}
+#insta ul.insta_list li:nth-of-type(9) a{
+    background-image: url(../img/insta/insta9.jpg);
+}
+#insta ul.insta_list li:nth-of-type(10) a{
+    background-image: url(../img/insta/insta10.jpg);
+}
+#insta ul.insta_list li:nth-of-type(11) a{
+    background-image: url(../img/insta/insta11.jpg);
+}
+#insta ul.insta_list li:nth-of-type(12) a{
+    background-image: url(../img/insta/insta12.jpg);
+}
+#insta ul.insta_list li:nth-of-type(13) a{
+    background-image: url(../img/insta/insta13.jpg);
+}
+#insta ul.insta_list li:nth-of-type(14) a{
+    background-image: url(../img/insta/insta14.jpg);
+}
+#insta ul.insta_list li:nth-of-type(15) a{
+    background-image: url(../img/insta/insta15.jpg);
+}
+#insta ul.insta_list li:nth-of-type(16) a{
+    background-image: url(../img/insta/insta16.jpg);
+}
