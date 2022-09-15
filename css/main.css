@@ -1,28 +1,115 @@
 @charset "UTF-8";
 
-/********** 타이틀 **********/
-#title {}
-#title img {
-    width: 100%;
-    position: relative;
+/********** 사이드 탑 버튼 **********/
+.aside {
+
 }
-#title::after{
+.aside .top_btn{
+    display: inline-block;
+    position: fixed;
+    top: 90%;
+    right: 6%;
+    width: 54px;
+    height: 54px;
+    background-color: #111;
+    border-radius: 50%;
+    z-index: 1;
+}
+.aside .top_btn p {
+    color: #fff;
+    font-size: 11px;
+    position: absolute;
+    top: 50%;
+    left: 24%;
+}
+.aside .top_btn p::before{
     display: block;
     content: "";
-    background-image: url(../img/bg-wave.png);
-    width: 100%;
-    height: 20px;
+    background-image: url(../img/top_btn.png);
+    top: -14px;
+    left: 8px;
+    width: 12px;
+    height: 6px;
     position: absolute;
-    bottom: -367px;
+}
+/********** 타이틀 **********/
+#title {
+    position: relative;
+    overflow: hidden;
+}
+#title img {
+
+}
+#title .wave{
+    background-image: url(../img/bg-wave.png);
+    height: 20px;
+    position: absolute;    
+    left: 0;
     right: 0;
-    background-repeat: repeat;
+    bottom: 0;  
+    z-index: 1;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 275px;
+    }
+}
+#title .raccoon{
+    /*
+    해결해야 될 부분
+        - 라쿤이 갔다 다시 돌아오게하기
+        - 라쿤이 위아래로 움직이면서 가게하기
+        - 애니메이션 시전 전 지점 hover해도 이상 없게 하기
+    */
+    background-image: url(../img/raccoon.png);
+    height: 174px;
+    position: absolute;    
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    z-index: 1;
+    animation-name: raccoon;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+}
+#title .raccoon:hover{
+    background-image: url(../img/raccoon_hover.png);
+    width: 226px;
+    height: 175px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    animation-name: raccoon;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+}
+@keyframes raccoon {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100%;
+    }
 }
 
 
 /********** 오직 농심몰 **********/
 #only {
     width: 100%;
-    margin: 100px 0;
+    margin: 150px 0;
     position: relative;
 }
 
@@ -174,7 +261,7 @@
 /********** AI 추천 **********/
 #ai{
     width: 100%;
-    margin: 100px 0;
+    margin: 150px 0;
     position: relative;
 }
 #ai .contents{
@@ -214,7 +301,7 @@
 
 /********** 따끈따끈 신상 new **********/
 #new { 
-    margin-bottom: 200px;
+    margin: 150px 0;
 }
 #new .contents { 
     background-color: #fff5f7;
@@ -246,7 +333,36 @@
     background-image: url(../img/main-hotdeal__bg.png);
     height: 710px;
     margin-bottom: 400px;
+    position: relative;
 }
+#hotdeal .wave1{
+    background-image: url(../img/bg-wave.png);
+    height: 20px;
+    position: absolute;    
+    left: 0;
+    right: 0;
+    top: 0;  
+    z-index: 1;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform: rotate(180deg);
+}
+#hotdeal .wave2{
+    background-image: url(../img/bg-wave.png);
+    height: 20px;
+    position: absolute;    
+    left: 0;
+    right: 0;
+    bottom: 0;  
+    z-index: 1;
+    animation-name: wave;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 #hotdeal .title{
     padding-top: 170px;
     margin: 50px 0;
@@ -265,6 +381,8 @@
     margin: 0 70px;
     padding: 50px;
     box-shadow: 3px 3px 20px 10px rgba(0,0,0,0.1);
+    z-index: 2;
+    position: relative;
 }
 #hotdeal .contents .image{
     width: 480px;height: 480px;
@@ -335,8 +453,7 @@
 
 
 /********** 가장 잘팔려요 베스트 **********/
-#best{
-}
+#best{}
 #best .contents{
     display: flex;
     flex-wrap: wrap;
@@ -440,9 +557,7 @@
 
 /********** 인스타그램 **********/
 #insta {
-
-}
-#insta .contents {
+    margin: 200px 0;
 }
 #insta ul.insta_list {
     display: flex;
@@ -452,6 +567,7 @@
 #insta ul.insta_list li {
     width: calc(100% / 8);
     padding-right: 10px;
+    position: relative;
 }
 #insta ul.insta_list li:nth-of-type(8){
     padding-right: 0px;
@@ -459,7 +575,7 @@
 #insta ul.insta_list li:nth-of-type(16){
     padding-right: 0px;
 }
-#insta ul.insta_list li a{
+#insta ul.insta_list li a.cont{
     display: inline-block;
     width: 100%;
     padding-top: 100%;
@@ -468,7 +584,7 @@
     background-size: cover;
     position: relative;
 }
-#insta ul.insta_list li a::before{
+#insta ul.insta_list li a.cont::before{
     content: "";
     display: block;
     width: 100%;
@@ -480,57 +596,103 @@
     opacity: 0;
     transition: all 0.2s;
 }
-#insta ul.insta_list li a:hover::before{
-        opacity: 1;
+#insta ul.insta_list li a.cont::after{
+    content: "";
+    display: block;
+    background-image: url(../img/insta/i_picture.png);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-size: contain;
 }
-#insta ul.insta_list li a:hover::after{
-
+#insta ul.insta_list li:nth-of-type(3) a.cont::after{
+    content: "";
+    display: block;
+    background-image: url(../img/insta/i_video.png);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    background-size: contain;
 }
-#insta ul.insta_list li:nth-of-type(1) a{
+#insta ul.insta_list li a.cont:hover::before{
+    opacity: 1;
+}
+#insta ul.insta_list li:nth-of-type(1) a.cont{
     background-image: url(../img/insta/insta1.jpg);
 }
-#insta ul.insta_list li:nth-of-type(2) a{
+#insta ul.insta_list li:nth-of-type(2) a.cont{
     background-image: url(../img/insta/insta2.jpg);
 }
-#insta ul.insta_list li:nth-of-type(3) a{
+#insta ul.insta_list li:nth-of-type(3) a.cont{
     background-image: url(../img/insta/insta3.jpg);
 }
-#insta ul.insta_list li:nth-of-type(4) a{
+#insta ul.insta_list li:nth-of-type(4) a.cont{
     background-image: url(../img/insta/insta4.jpg);
 }
-#insta ul.insta_list li:nth-of-type(5) a{
+#insta ul.insta_list li:nth-of-type(5) a.cont{
     background-image: url(../img/insta/insta5.jpg);
 }
-#insta ul.insta_list li:nth-of-type(6) a{
+#insta ul.insta_list li:nth-of-type(6) a.cont{
     background-image: url(../img/insta/insta6.jpg);
 }
-#insta ul.insta_list li:nth-of-type(7) a{
+#insta ul.insta_list li:nth-of-type(7) a.cont{
     background-image: url(../img/insta/insta7.jpg);
 }
-#insta ul.insta_list li:nth-of-type(8) a{
+#insta ul.insta_list li:nth-of-type(8) a.cont{
     background-image: url(../img/insta/insta8.jpg);
 }
-#insta ul.insta_list li:nth-of-type(9) a{
+#insta ul.insta_list li:nth-of-type(9) a.cont{
     background-image: url(../img/insta/insta9.jpg);
 }
-#insta ul.insta_list li:nth-of-type(10) a{
+#insta ul.insta_list li:nth-of-type(10) a.cont{
     background-image: url(../img/insta/insta10.jpg);
 }
-#insta ul.insta_list li:nth-of-type(11) a{
+#insta ul.insta_list li:nth-of-type(11) a.cont{
     background-image: url(../img/insta/insta11.jpg);
 }
-#insta ul.insta_list li:nth-of-type(12) a{
+#insta ul.insta_list li:nth-of-type(12) a.cont{
     background-image: url(../img/insta/insta12.jpg);
 }
-#insta ul.insta_list li:nth-of-type(13) a{
+#insta ul.insta_list li:nth-of-type(13) a.cont{
     background-image: url(../img/insta/insta13.jpg);
 }
-#insta ul.insta_list li:nth-of-type(14) a{
+#insta ul.insta_list li:nth-of-type(14) a.cont{
     background-image: url(../img/insta/insta14.jpg);
 }
-#insta ul.insta_list li:nth-of-type(15) a{
+#insta ul.insta_list li:nth-of-type(15) a.cont{
     background-image: url(../img/insta/insta15.jpg);
 }
-#insta ul.insta_list li:nth-of-type(16) a{
+#insta ul.insta_list li:nth-of-type(16) a.cont{
     background-image: url(../img/insta/insta16.jpg);
+}
+#insta ul.insta_list li a.heart{
+    font-size: 0;
+    position: absolute;
+    top: 47%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/insta/i_heart.png);
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    opacity: 0;
+}
+#insta ul.insta_list li a.talk{
+    font-size: 0;
+    position: absolute;
+    top: 47%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    background-image: url(../img/insta/i_talk.png);
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+    opacity: 0;
+}
+#insta ul.insta_list li:hover a.heart, #insta ul.insta_list li:hover a.talk{
+    opacity: 1;
 }
