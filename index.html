@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/8570aa860b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script defer src="js/main.js"></script>
 </head>
 <body>
     <header>
@@ -25,12 +27,12 @@
                 <div class="gnb">
                     <div class="lnb_btn">
                         <a href="#">
-                            <img src="img/menu.png" alt="메뉴 누르기">
+                            <img src="img/main_index/menu.png" alt="메뉴 누르기">
                         </a>
                     </div>
                     <h1>
                         <a href="#">
-                            <img src="img/logo.png" alt="로고">
+                            <img src="img/main_index/logo.png" alt="로고">
                         </a>
                     </h1>
                     <ul>
@@ -67,150 +69,205 @@
                     <ul>
                         <li>
                             <a href="#">
-                                <img src="img/search.png" alt="검색">
+                                <img src="img/main_index/search.png" alt="검색">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/user.png" alt="마이페이지">
+                                <img src="img/main_index/user.png" alt="마이페이지">
                             </a>
                         </li>
                         <li>
                             <a href="#">
-                                <img src="img/cart.png" alt="장바구니">
+                                <img src="img/main_index/cart.png" alt="장바구니">
                             </a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
+        <div class="lnb_wrap">
+            <div class="dark"></div>
+            <div id="lnb">
+                <div class="login">
+                    <a href="login.html">
+                        <p><strong>로그인</strong> 해주세요.</p>
+                    </a>
+                    <a href="#" class="btn_close">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="list">
+                    <div class="home">
+                        <h2>
+                            <a href="index.html">홈</a>
+                        </h2>
+                    </div>
+                    <div class="category">
+                        <h2>
+                            <a href="#">카테고리</a>
+                        </h2>
+                        <div class="ul_wrap">
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">라면</a>
+                                </li>
+                                <li><a href="#">봉지면</a></li>
+                                <li><a href="#">용기면</a></li>
+                                <li><a href="#">건면</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">스낵</a>
+                                </li>
+                                <li><a href="#">소용량</a></li>
+                                <li><a href="#">중용량</a></li>
+                                <li><a href="#">대용량</a></li>
+                                <li><a href="#">묶음</a></li>
+                            </ul>
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">간편식</a>
+                                </li>
+                                <li><a href="#">소스</a></li>
+                                <li><a href="#">라볶이</a></li>
+                                <li><a href="#">김치찌개면</a></li>
+                                <li><a href="#">누들핏</a></li>
+                            </ul>
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">백산수</a>
+                                </li>
+                                <li><a href="#">백산수</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">음료</a>
+                                </li>
+                                <li><a href="#">탄산음료</a></li>
+                                <li><a href="#">차음료</a></li>
+                                <li><a href="#">과일음료</a></li>
+                                <li><a href="#">스포츠음료</a></li>
+                            </ul>
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">캔디류</a>
+                                </li>
+                                <li><a href="#">하드캔디</a></li>
+                                <li><a href="#">소프트캔디</a></li>
+                                <li><a href="#">젤리</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">스프</a>
+                                </li>
+                                <li><a href="#">보노스프</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">카레</a>
+                                </li>
+                                <li><a href="#">하우스카레</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                            <ul>
+                                <li class="category_bold">
+                                    <a href="#">글로벌</a>
+                                </li>
+                                <li><a href="#">조미제품</a></li>
+                                <li><a href="#">캔</a></li>
+                                <li><a href="#">잼</a></li>
+                                <li><a href="#">디저트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="brand">
+                        <h2>
+                            <a href="#">브랜드</a>
+                        </h2> 
+                        <ul>
+                            <li><a href="#">신라면</a></li>
+                            <li><a href="#">안성탕면</a></li>
+                            <li><a href="#">너구리</a></li>
+                            <li><a href="#">짜파게티</a></li>
+                            <li><a href="#">육개장사발면</a></li>
+                            <li><a href="#">새우깡</a></li>
+                            <li><a href="#">수미칩</a></li>
+                            <li><a href="#">포테토칩</a></li>
+                            <li><a href="#">쫄병스낵</a></li>
+                            <li><a href="#">닭다리</a></li>
+                            <li><a href="#">쿡탐</a></li>
+                            <li><a href="#">백산수</a></li>
+                            <li><a href="#">웰치</a></li>
+                            <li><a href="#">카프리썬</a></li>
+                            <li><a href="#">파워오투</a></li>
+                            <li><a href="#">이토엔</a></li>
+                            <li><a href="#">캠벨</a></li>
+                            <li><a href="#">츄파춥스</a></li>
+                            <li><a href="#">멘토스</a></li>
+                            <li><a href="#">보노스프</a></li>
+                            <li><a href="#">하우스</a></li>
+                            <li><a href="#">스머커스</a></li>
+                            <li><a href="#">심플레이트</a></li>
+                        </ul>           
+                    </div>
+                </div>
+                <div class="banner">
+                    <ul>
+                        <li>
+                            <div class="text">
+                                <h2>커스텀 농꾸30% 할인 쿠폰</h2>
+                                <p>선착순 250명 증정</p>
+                                <p class="gray">2022-09-13 ~소진시까지</p>
+                            </div>
+                            <div class="img">
+                                <a href="#">
+                                    <img src="img/lnb/lnb1.jpg" alt="첫만남 기념 보너스쿠폰 증정">
+                                </a>                                
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="text">
+                                <h2>포토리뷰 남기고 짜파게티<br> 굿즈 득템하즈아~</h2>
+                                <p>농심몰 집들이 기념</p>
+                                <p class="gray">2022-08-30~2022-09-30</p>
+                            </div>
+                            <div class="img">
+                                <a href="#">
+                                <img src="img/lnb/lnb2.jpg" alt="포토리뷰 남기고 짜파게티 굿즈 득템하자">
+                                </a>                                
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text">
+                                <h2>올리브 짜파게티가 단돈<br> 100원!</h2>
+                                <p>첫 구매 3만원이상 구매시</p>
+                                <p class="gray">2022-08-30 ~ 2022-09-30</p>
+                            </div>
+                            <div class="img">
+                                <a href="#">
+                                    <img src="img/lnb/lnb3.jpg" alt="첫구매 3만원이상 구매시 짜파게티가 100원">
+                                </a>                                
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
     </header>
     <!--클릭시 아래로 슬라이드돼 내려오는 LNB-->
-    <div class="lnb_wrap">
-        <div class="dark"></div>
-        <div id="lnb">
-            <div class="login">
-                <a href="#">
-                    <p><strong>로그인</strong> 해주세요.</p>
-                </a>
-                <a href="#" class="btn_close">
-                    <i class="fa-sharp fa-solid fa-xmark"></i>
-                </a>
-            </div>
-            <div class="lnb_list">
-                <div class="lnb_list_home">
-                    <h2>
-                        <a href="#">홈</a>
-                    </h2>
-                </div>
-                <div class="lnb_list_category">
-                    <h2>
-                        <a href="#">카테고리</a>
-                    </h2>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">라면</a>
-                        </li>
-                        <li><a href="#">봉지면</a></li>
-                        <li><a href="#">용기면</a></li>
-                        <li><a href="#">건면</a></li>
-                    </ul>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">스낵</a>
-                        </li>
-                        <li><a href="#">소용량</a></li>
-                        <li><a href="#">중용량</a></li>
-                        <li><a href="#">대용량</a></li>
-                        <li><a href="#">묶음</a></li>
-                    </ul>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">간편식</a>
-                        </li>
-                        <li><a href="#">소스</a></li>
-                        <li><a href="#">라볶이</a></li>
-                        <li><a href="#">김치찌개면</a></li>
-                        <li><a href="#">누들핏</a></li>
-                    </ul>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">백산수</a>
-                        </li>
-                        <li><a href="#">백산수</a></li>
-                    </ul>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">음료</a>
-                        </li>
-                        <li><a href="#">탄산음료</a></li>
-                        <li><a href="#">차음료</a></li>
-                        <li><a href="#">과일음료</a></li>
-                        <li><a href="#">스포츠음료</a></li>
-                    </ul>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">캔디류</a>
-                        </li>
-                        <li><a href="#">하드캔디</a></li>
-                        <li><a href="#">소프트캔디</a></li>
-                        <li><a href="#">젤리</a></li>
-                    </ul>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">스프</a>
-                        </li>
-                        <li><a href="#">보노스프</a></li>
-                    </ul>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">카레</a>
-                        </li>
-                        <li><a href="#">하우스카레</a></li>
-                    </ul>
-                    <ul>
-                        <li class="category_bold">
-                            <a href="#">글로벌</a>
-                        </li>
-                        <li><a href="#">조미제품</a></li>
-                        <li><a href="#">캔</a></li>
-                        <li><a href="#">잼</a></li>
-                        <li><a href="#">디저트</a></li>
-                    </ul>
-                </div>
-                <div class="lnb_list_brand">
-                    <h2>
-                        <a href="#">브랜드</a>
-                    </h2> 
-                    <ul>
-                        <li><a href="#">신라면</a></li>
-                        <li><a href="#">안성탕면</a></li>
-                        <li><a href="#">너구리</a></li>
-                        <li><a href="#">짜파게티</a></li>
-                        <li><a href="#">육개장사발면</a></li>
-                        <li><a href="#">새우깡</a></li>
-                        <li><a href="#">수미칩</a></li>
-                        <li><a href="#">포테토칩</a></li>
-                        <li><a href="#">쫄병스낵</a></li>
-                        <li><a href="#">닭다리</a></li>
-                        <li><a href="#">쿡탐</a></li>
-                        <li><a href="#">백산수</a></li>
-                        <li><a href="#">웰치</a></li>
-                        <li><a href="#">카프리썬</a></li>
-                        <li><a href="#">파워오투</a></li>
-                        <li><a href="#">이토엔</a></li>
-                        <li><a href="#">캠벨</a></li>
-                        <li><a href="#">츄파춥스</a></li>
-                        <li><a href="#">멘토스</a></li>
-                        <li><a href="#">보노스프</a></li>
-                        <li><a href="#">하우스</a></li>
-                        <li><a href="#">스머커스</a></li>
-                        <li><a href="#">심플레이트</a></li>
-                    </ul>           
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <main>
         <div class="aside">
@@ -221,7 +278,7 @@
             </div>
         </div>
         <section id="title">
-            <img src="img/Main_pc_NEW1KTT.gif" alt="라면왕 김통깨">
+            <img src="img/main_index/Main_pc_NEW1KTT.gif" alt="라면왕 김통깨">
             <div class="wave"></div>
             <div class="raccoon"></div>
         </section>
@@ -256,9 +313,9 @@
                             <img src="img/box.png" alt="box">
                         </div>-->
                         <div class="text_prev">
-                                <img src="img/new.png" alt="new">
-                                <img src="img/sale.png" alt="sale">
-                                <img src="img/box.png" alt="box">
+                                <img src="img/main_index/new.png" alt="new">
+                                <img src="img/main_index/sale.png" alt="sale">
+                                <img src="img/main_index/box.png" alt="box">
                         </div>
                         <div class="text">
                             <p class="title">튤립햄 선물세트(9입)</p>
@@ -284,8 +341,8 @@
                             </div>
                         </div>
                         <div class="text_prev">
-                            <img src="img/new.png" alt="new">
-                            <img src="img/sale.png" alt="sale">
+                            <img src="img/main_index/new.png" alt="new">
+                            <img src="img/main_index/sale.png" alt="sale">
                         </div>
                         <div class="text">
                             <p class="title">[200세트 한정]누들핏 떡볶이국물맛 6입+어묵탕맛 4입</p>
@@ -305,8 +362,8 @@
                             </div>
                         </div>
                         <div class="text_prev">
-                            <img src="img/new.png" alt="new">
-                            <img src="img/sale.png" alt="sale">
+                            <img src="img/main_index/new.png" alt="new">
+                            <img src="img/main_index/sale.png" alt="sale">
                         </div>
                         <div class="text">
                             <p class="title">[200세트 한정] 누들핏 어묵탕맛 6입+떡볶이국물맛 4입</p>
@@ -326,7 +383,7 @@
                             </div>
                         </div>
                         <div class="text_prev">
-                            <img src="img/box.png" alt="box">
+                            <img src="img/main_index/box.png" alt="box">
                         </div>
                         <!--이게 원래 기본임
                         <div class="text_prev">
@@ -499,7 +556,7 @@
                             </div>
                         </div>
                         <div class="text_prev">
-                                <img src="img/new.png" alt="new">
+                                <img src="img/main_index/new.png" alt="new">
                         </div>
                         <div class="text">
                             <p class="title">후루룩쌀국수미역국(74g*1)</p>
@@ -517,7 +574,7 @@
                             </div>
                         </div>
                         <div class="text_prev">
-                            <img src="img/new.png" alt="new">
+                            <img src="img/main_index/new.png" alt="new">
                         </div>
                         <div class="text">
                             <p class="title">라면왕김통깨(100g*4)</p>
@@ -535,7 +592,7 @@
                             </div>
                         </div>
                         <div class="text_prev">
-                            <img src="img/new.png" alt="new">
+                            <img src="img/main_index/new.png" alt="new">
                         </div>
                         <div class="text">
                             <p class="title">누들핏 떡볶이국물맛(50.4g*1)</p>
@@ -553,7 +610,7 @@
                             </div>
                         </div>
                         <div class="text_prev">
-                            <img src="img/new.png" alt="box">
+                            <img src="img/main_index/new.png" alt="box">
                         </div>
                         <div class="text">
                             <p class="title">누들핏 어묵탕맛(31.2g*1)</p>
@@ -577,7 +634,7 @@
                 </div>
                 <div class="contents">
                     <div class="image">
-                        <img src="img/hotdeal/hotdeal1.png" alt="핫딜 첫 이미지">
+                        <img src="img/main_index/hotdeal/hotdeal1.png" alt="핫딜 첫 이미지">
                     </div>
                     <div class="text">
                         <p class="time_txt">남은시간</p>
@@ -594,9 +651,9 @@
         </section>
         <section id="banner">
             <div class="inner">
-                <a href="#" class="b1"><img src="img/main-banner__sec01.jpg" alt="나에게 딱 맞는 컵면 누들핏 배너"></a>
-                <a href="#" class="b2"><img src="img/PC_BN_2_custom.jpg" alt="나만의 라면&스낵 농꾸 배너"></a>
-                <a href="#" class="b3"><img src="img/main-banner__sec03.jpg" alt="출석체크 이벤트 배너"></a>
+                <a href="#" class="b1"><img src="img/main_index/main-banner__sec01.jpg" alt="나에게 딱 맞는 컵면 누들핏 배너"></a>
+                <a href="#" class="b2"><img src="img/main_index/PC_BN_2_custom.jpg" alt="나만의 라면&스낵 농꾸 배너"></a>
+                <a href="#" class="b3"><img src="img/main_index/main-banner__sec03.jpg" alt="출석체크 이벤트 배너"></a>
             </div>
         </section>
         <section id="best">
@@ -754,7 +811,7 @@
         <section id="limited_banner">
             <div class="inner">
                 <a href="#">
-                    <img src="img/main-banner02--220830.jpg" alt="나만 알고 싶은 놀심몰 전용 상품 배너">
+                    <img src="img/main_index/main-banner02--220830.jpg" alt="나만 알고 싶은 놀심몰 전용 상품 배너">
                 </a>
             </div>
         </section>

@@ -93,17 +93,17 @@
   display: none;
 }
 #header_bottom ul > li:hover .sub{
-	display: block;
+  display: block;
 }
 #header_bottom ul.sub::before{
-	display: block;
-	content: "";
-	position: absolute; 
-	top: -24px;
-	left: 50%;
-	transform: translate(-50%);
-	border: 12px solid transparent;
-	border-bottom-color: #fff;
+  display: block;
+  content: "";
+  position: absolute; 
+  top: -24px;
+  left: 50%;
+  transform: translate(-50%);
+  border: 12px solid transparent;
+  border-bottom-color: #fff;
 }
 
 #header_bottom ul.sub li {
@@ -124,7 +124,7 @@
 
 /********** dark **********/
 .dark{
-  /*! display: none; */
+  display: none;
   position: fixed;
   left: 0; top: 0;
   width: 100%; height: 100%;
@@ -138,6 +138,7 @@
   width: 100%;
 }
 #lnb {
+  display: none;
   position: absolute;
   width: 90%;
   top: -121px;
@@ -172,29 +173,91 @@
   transform: translate(-50%);
 }
 
-#lnb .lnb_list {
+#lnb .list {
   width: 50%;
   border-right: 1px solid #eee;
   padding: 60px;
 }
 /** lnb 홈 **/
-#lnb .lnb_list_home {border: 1px solid red;}
-#lnb .lnb_list_home h2 > a {}
+#lnb .list .home {}
+#lnb .list .home h2 > a {}
 
 /** lnb 카테고리 **/
-#lnb .lnb_list_category {}
-#lnb .lnb_list_category h2 > a {}
-#lnb .lnb_list_category ul {}
-#lnb .lnb_list_category li {}
-#lnb .lnb_list_category li.category_bold {}
-#lnb .lnb_list_category li a {}
+#lnb .list .category, #lnb .list .brand { margin-top: 40px;}
+#lnb h2 > a {font-size: 30px;}
+#lnb .list .category ul {display: flex;}
+#lnb .list .category li, #lnb .list .brand li {
+  width: calc(100% / 5);
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+#lnb .list .category li.category_bold a {color: #111;}
+#lnb .list .category li a, #lnb .list .brand li a {color: #666;font-size: 20px;}
+#lnb .list .category li a:hover, #lnb .list .brand li a:hover {color: #c7002e;}
 
 /** lnb 브랜드 **/
-#lnb .lnb_list_brand {}
-#lnb .lnb_list_brand h2 > a {}
-#lnb .lnb_list_brand ul {}
-#lnb .lnb_list_brand li {}
-#lnb .lnb_list_brand li a {}
+#lnb .list .brand ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/** lnb 배너 **/
+#lnb .banner {
+  width: 50%;
+  padding: 70px 0 60px 60px;
+}
+#lnb .banner ul {}
+#lnb .banner li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+#lnb .banner li .text {position: relative;/*! margin: 30px 0; */}
+#lnb .banner li .text h2 {font-size: 29px;}
+#lnb .banner li .text p {
+  margin-top: 10px;
+  color: #666;
+  font-size: 18px;
+}
+#lnb .banner li .text p.gray {
+  position: absolute;
+  bottom: 0;
+  color: #999;
+  padding-left: 25px;
+  font-size: 16px;
+}
+#lnb .banner li .text p.gray::before {
+  display: block;
+  content: "";
+  background-image: url(../img/lnb/lnb_clock.png);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+}
+
+
+
+#lnb .banner li .img {}
+#lnb .banner li .img a {display: block;/*! margin-left: 20px; */}
+#lnb .banner li .img img {border-radius: 24px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -202,10 +265,10 @@
 /**************** FOOTER *****************/
 footer {
   color: #555;
-  text-align: center;
-  /*! line-height: 42px; */
   font-size: 16px;
   display: block;
+  background-color: #111;
+  padding-bottom: 80px;
 }
 .ft_top {
   display: flex;
@@ -240,7 +303,6 @@ footer {
   padding: 30px 0;
 }
 .ft_top .site a {
-
   color: #666;
   border: 1px solid #666;
   border-radius: 30px;
@@ -252,7 +314,7 @@ footer {
   padding-top: 20px;
 }
 .ft_bottom h3 {
-  background-image: url(../img/f_logo.png);
+  background-image: url(../img/main_index/f_logo.png);
   background-repeat: no-repeat;
   width: 104px;
   height: 34px;

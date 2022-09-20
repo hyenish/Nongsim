@@ -30,7 +30,7 @@
 .aside .top_btn a p::before{
     display: block;
     content: "";
-    background-image: url(../img/top_btn.png);
+    background-image: url(../img/main_index/top_btn.png);
     top: -14px;
     left: 8px;
     width: 12px;
@@ -46,7 +46,7 @@
 
 }
 #title .wave{
-    background-image: url(../img/bg-wave.png);
+    background-image: url(../img/main_index/bg-wave.png);
     height: 20px;
     position: absolute;    
     left: 0;
@@ -73,7 +73,7 @@
         - 라쿤이 위아래로 움직이면서 가게하기
         - 애니메이션 시전 전 지점 hover해도 이상 없게 하기
     */
-    background-image: url(../img/raccoon.png);
+    background-image: url(../img/main_index/raccoon.png);
     height: 174px;
     position: absolute;    
     left: 0;
@@ -87,7 +87,7 @@
     background-repeat: no-repeat;
 }
 #title .raccoon:hover{
-    background-image: url(../img/raccoon_hover.png);
+    background-image: url(../img/main_index/raccoon_hover.png);
     width: 226px;
     height: 175px;
     position: absolute;
@@ -200,16 +200,16 @@
     background-origin: border-box;
 }
 #only .contents .item:nth-of-type(1) p.image{
-    background-image: url(../img/only/only1_1.png);
+    background-image: url(../img/main_index/only/only1_1.png);
 }
 #only .contents .item:nth-of-type(2) p.image{
-    background-image: url(../img/only/only1_2.png);
+    background-image: url(../img/main_index/only/only1_2.png);
 }
 #only .contents .item:nth-of-type(3) p.image{
-    background-image: url(../img/only/only1_3.png);
+    background-image: url(../img/main_index/only/only1_3.png);
 }
 #only .contents .item:nth-of-type(4) p.image{
-    background-image: url(../img/only/only1_4.png);
+    background-image: url(../img/main_index/only/only1_4.png);
 }
 
 .contents .item .image_wrap{
@@ -221,13 +221,13 @@
     bottom: 20px;
 }
 .contents .item .side p.wish{
-    background-image: url(../img/wish.png);
+    background-image: url(../img/main_index/wish.png);
     width: 44px;
     height: 44px;
     margin-bottom: 10px;
 }
 .contents .item .side p.cart{
-    background-image: url(../img/cart_circle.png);
+    background-image: url(../img/main_index/cart_circle.png);
     width: 44px;
     height: 44px;
 }
@@ -276,28 +276,28 @@
     padding-right: 0;
 }
 #ai .contents .item:nth-of-type(1) p.image{
-    background-image: url(../img/ai/ai1.png);
+    background-image: url(../img/main_index/ai/ai1.png);
 }
 #ai .contents .item:nth-of-type(2) p.image{
-    background-image: url(../img/ai/ai2.png);
+    background-image: url(../img/main_index/ai/ai2.png);
 }
 #ai .contents .item:nth-of-type(3) p.image{
-    background-image: url(../img/ai/ai3.png);
+    background-image: url(../img/main_index/ai/ai3.png);
 }
 #ai .contents .item:nth-of-type(4) p.image{
-    background-image: url(../img/ai/ai4.png);
+    background-image: url(../img/main_index/ai/ai4.png);
 }
 #ai .contents .item:nth-of-type(5) p.image{
-    background-image: url(../img/ai/ai5.png);
+    background-image: url(../img/main_index/ai/ai5.png);
 }
 #ai .contents .item:nth-of-type(6) p.image{
-    background-image: url(../img/ai/ai6.png);
+    background-image: url(../img/main_index/ai/ai6.png);
 }
 #ai .contents .item:nth-of-type(7) p.image{
-    background-image: url(../img/ai/ai7.png);
+    background-image: url(../img/main_index/ai/ai7.png);
 }
 #ai .contents .item:nth-of-type(8) p.image{
-    background-image: url(../img/ai/ai8.png);
+    background-image: url(../img/main_index/ai/ai8.png);
 }
 #ai .contents .text p.title{
     margin-top: 30px;
@@ -319,29 +319,29 @@
     background-color: #fff;
 }
 #new .contents .item:nth-of-type(1) p.image{
-    background-image: url(../img/new/new1.png);
+    background-image: url(../img/main_index/new/new1.png);
 }
 #new .contents .item:nth-of-type(2) p.image{
-    background-image: url(../img/new/new2.png);
+    background-image: url(../img/main_index/new/new2.png);
 }
 #new .contents .item:nth-of-type(3) p.image{
-    background-image: url(../img/new/new3.png);
+    background-image: url(../img/main_index/new/new3.png);
 }
 #new .contents .item:nth-of-type(4) p.image{
-    background-image: url(../img/new/new4.png);
+    background-image: url(../img/main_index/new/new4.png);
 }
 
 
 /********** 지금이다 핫딜 **********/
 #hotdeal {
     background-color: #c7002e;
-    background-image: url(../img/main-hotdeal__bg.png);
+    background-image: url(../img/main_index/main-hotdeal__bg.png);
     height: 710px;
     margin-bottom: 400px;
     position: relative;
 }
 #hotdeal .wave1{
-    background-image: url(../img/bg-wave.png);
+    background-image: url(../img/main_index/bg-wave.png);
     height: 20px;
     position: absolute;    
     left: 0;
@@ -355,7 +355,7 @@
     transform: rotate(180deg);
 }
 #hotdeal .wave2{
-    background-image: url(../img/bg-wave.png);
+    background-image: url(../img/main_index/bg-wave.png);
     height: 20px;
     position: absolute;    
     left: 0;
@@ -464,28 +464,28 @@
     flex-wrap: wrap;
 }
 #best .contents .item:nth-of-type(1) p.image{
-    background-image: url(../img/best/best2_1.png);
+    background-image: url(../img/main_index/best/best2_1.png);
 }
 #best .contents .item:nth-of-type(2) p.image{
-    background-image: url(../img/best/best2_2.png);
+    background-image: url(../img/main_index/best/best2_2.png);
 }
 #best .contents .item:nth-of-type(3) p.image{
-    background-image: url(../img/best/best2_3.png);
+    background-image: url(../img/main_index/best/best2_3.png);
 }
 #best .contents .item:nth-of-type(4) p.image{
-    background-image: url(../img/best/best2_4.png);
+    background-image: url(../img/main_index/best/best2_4.png);
 }
 #best .contents .item:nth-of-type(5) p.image{
-    background-image: url(../img/best/best2_5.png);
+    background-image: url(../img/main_index/best/best2_5.png);
 }
 #best .contents .item:nth-of-type(6) p.image{
-    background-image: url(../img/best/best2_6.png);
+    background-image: url(../img/main_index/best/best2_6.png);
 }
 #best .contents .item:nth-of-type(7) p.image{
-    background-image: url(../img/best/best2_7.png);
+    background-image: url(../img/main_index/best/best2_7.png);
 }
 #best .contents .item:nth-of-type(8) p.image{
-    background-image: url(../img/best/best2_8.png);
+    background-image: url(../img/main_index/best/best2_8.png);
 }
 #best .contents .text p.title{
     margin-top: 20px;
@@ -523,34 +523,34 @@
     font-size: 0px;
 }
 #brand li:nth-of-type(1) a {
-    background-image: url(../img/brand/brand1.png);
+    background-image: url(../img/main_index/brand/brand1.png);
 }
 #brand li:nth-of-type(2) a {
-    background-image: url(../img/brand/brand2.png);
+    background-image: url(../img/main_index/brand/brand2.png);
 }
 #brand li:nth-of-type(3) a {
-    background-image: url(../img/brand/brand3.png);
+    background-image: url(../img/main_index/brand/brand3.png);
 }
 #brand li:nth-of-type(4) a {
-    background-image: url(../img/brand/brand4.png);
+    background-image: url(../img/main_index/brand/brand4.png);
 }
 #brand li:nth-of-type(5) a {
-    background-image: url(../img/brand/brand5.png);
+    background-image: url(../img/main_index/brand/brand5.png);
 }
 #brand li:nth-of-type(6) a {
-    background-image: url(../img/brand/brand6.png);
+    background-image: url(../img/main_index/brand/brand6.png);
 }
 #brand li:nth-of-type(7) a {
-    background-image: url(../img/brand/brand7.png);
+    background-image: url(../img/main_index/brand/brand7.png);
 }
 #brand li:nth-of-type(8) a {
-    background-image: url(../img/brand/brand8.png);
+    background-image: url(../img/main_index/brand/brand8.png);
 }
 #brand li:nth-of-type(9) a {
-    background-image: url(../img/brand/brand9.png);
+    background-image: url(../img/main_index/brand/brand9.png);
 }
 #brand li:nth-of-type(10) a {
-    background-image: url(../img/brand/brand10.png);
+    background-image: url(../img/main_index/brand/brand10.png);
 }
 #brand li span {
     display: block;
@@ -604,7 +604,7 @@
 #insta ul.insta_list li a.cont::after{
     content: "";
     display: block;
-    background-image: url(../img/insta/i_picture.png);
+    background-image: url(../img/main_index/insta/i_picture.png);
     width: 25px;
     height: 25px;
     position: absolute;
@@ -615,7 +615,7 @@
 #insta ul.insta_list li:nth-of-type(3) a.cont::after{
     content: "";
     display: block;
-    background-image: url(../img/insta/i_video.png);
+    background-image: url(../img/main_index/insta/i_video.png);
     width: 30px;
     height: 30px;
     position: absolute;
@@ -627,52 +627,52 @@
     opacity: 1;
 }
 #insta ul.insta_list li:nth-of-type(1) a.cont{
-    background-image: url(../img/insta/insta1.jpg);
+    background-image: url(../img/main_index/insta/insta1.jpg);
 }
 #insta ul.insta_list li:nth-of-type(2) a.cont{
-    background-image: url(../img/insta/insta2.jpg);
+    background-image: url(../img/main_index/insta/insta2.jpg);
 }
 #insta ul.insta_list li:nth-of-type(3) a.cont{
-    background-image: url(../img/insta/insta3.jpg);
+    background-image: url(../img/main_index/insta/insta3.jpg);
 }
 #insta ul.insta_list li:nth-of-type(4) a.cont{
-    background-image: url(../img/insta/insta4.jpg);
+    background-image: url(../img/main_index/insta/insta4.jpg);
 }
 #insta ul.insta_list li:nth-of-type(5) a.cont{
-    background-image: url(../img/insta/insta5.jpg);
+    background-image: url(../img/main_index/insta/insta5.jpg);
 }
 #insta ul.insta_list li:nth-of-type(6) a.cont{
-    background-image: url(../img/insta/insta6.jpg);
+    background-image: url(../img/main_index/insta/insta6.jpg);
 }
 #insta ul.insta_list li:nth-of-type(7) a.cont{
-    background-image: url(../img/insta/insta7.jpg);
+    background-image: url(../img/main_index/insta/insta7.jpg);
 }
 #insta ul.insta_list li:nth-of-type(8) a.cont{
-    background-image: url(../img/insta/insta8.jpg);
+    background-image: url(../img/main_index/insta/insta8.jpg);
 }
 #insta ul.insta_list li:nth-of-type(9) a.cont{
-    background-image: url(../img/insta/insta9.jpg);
+    background-image: url(../img/main_index/insta/insta9.jpg);
 }
 #insta ul.insta_list li:nth-of-type(10) a.cont{
-    background-image: url(../img/insta/insta10.jpg);
+    background-image: url(../img/main_index/insta/insta10.jpg);
 }
 #insta ul.insta_list li:nth-of-type(11) a.cont{
-    background-image: url(../img/insta/insta11.jpg);
+    background-image: url(../img/main_index/insta/insta11.jpg);
 }
 #insta ul.insta_list li:nth-of-type(12) a.cont{
-    background-image: url(../img/insta/insta12.jpg);
+    background-image: url(../img/main_index/insta/insta12.jpg);
 }
 #insta ul.insta_list li:nth-of-type(13) a.cont{
-    background-image: url(../img/insta/insta13.jpg);
+    background-image: url(../img/main_index/insta/insta13.jpg);
 }
 #insta ul.insta_list li:nth-of-type(14) a.cont{
-    background-image: url(../img/insta/insta14.jpg);
+    background-image: url(../img/main_index/insta/insta14.jpg);
 }
 #insta ul.insta_list li:nth-of-type(15) a.cont{
-    background-image: url(../img/insta/insta15.jpg);
+    background-image: url(../img/main_index/insta/insta15.jpg);
 }
 #insta ul.insta_list li:nth-of-type(16) a.cont{
-    background-image: url(../img/insta/insta16.jpg);
+    background-image: url(../img/main_index/insta/insta16.jpg);
 }
 #insta ul.insta_list li a.heart{
     font-size: 0;
@@ -680,7 +680,7 @@
     top: 47%;
     left: 40%;
     transform: translate(-50%, -50%);
-    background-image: url(../img/insta/i_heart.png);
+    background-image: url(../img/main_index/insta/i_heart.png);
     width: 18px;
     height: 18px;
     background-size: contain;
@@ -692,7 +692,7 @@
     top: 47%;
     left: 58%;
     transform: translate(-50%, -50%);
-    background-image: url(../img/insta/i_talk.png);
+    background-image: url(../img/main_index/insta/i_talk.png);
     width: 18px;
     height: 18px;
     background-size: contain;
