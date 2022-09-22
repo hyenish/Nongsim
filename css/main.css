@@ -244,7 +244,7 @@
 }
 .contents .text p.price{
     height: 50px;
-    /*! font-weight: bold; */
+    margin-top: 15px;
 }
 .contents .text p.price span{
     margin-right: 4px;
